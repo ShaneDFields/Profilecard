@@ -1,0 +1,104 @@
+html {
+  background-image: url(background.jpg);
+  background-repeat: no-repeat;
+  background-image: fixed fixed;
+  background-size: cover;
+  height: 100%;
+  overflow: hidden;
+}
+
+#profile {
+  /* width: 50%;
+position: fixed;
+text-align: center; */
+  clip-path: circle();
+  /* display: block;
+  margin-left: auto;
+  margin-right: auto; */
+  width: 60%;
+  image-rendering: optimizeQuality;
+}
+
+#card {
+  display: block;
+  text-align: center;
+  display: block;
+  border: 1px solid #ff10f0;
+  border-radius: 8px;
+  width: 30rem;
+  padding: 1rem;
+  margin: 5rem auto;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(2px);
+  box-shadow: 0 0 0.2rem #fff, 0 0 0.2rem #fff, 0 0 2rem #ff10f0,
+    0 0 0.8rem #ff10f0, 0 0 2.8rem #ff10f0;
+}
+
+#name {
+  font-family: "Bebas Neue", cursive;
+  color: #fff;
+  font-size: 32px;
+}
+
+#location {
+  font-family: "Ubuntu", sans-serif;
+  color: #fff;
+  font-weight: 400;
+}
+
+#bio {
+  font-family: "Ubuntu", sans-serif;
+  color: #fff;
+  font-weight: 700;
+}
+
+#html,
+#css,
+#javascript,
+#react,
+#nodejs,
+#git {
+  display: inline-flex;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 8px;
+  padding: 0.25rem 1rem;
+  margin: 4px;
+  font-size: 18px;
+  font-family: "Ubuntu", sans-serif;
+}
+
+#html:hover,
+#css:hover,
+#javascript:hover,
+#react:hover,
+#nodejs:hover,
+#git:hover {
+  scale: 1.1;
+  background-color: aliceblue;
+  transition: 0.4s ease-out;
+  color: black;
+}
+
+#cta {
+  font-family: "Ubuntu", sans-serif;
+  color: #fff;
+  font-weight: 700;
+}
+
+#social {
+    scale: 2.5;
+    margin: 2rem 0;
+}
+
+#github,#linkedin,#twitter,#instagram {
+    color:#fff;
+    padding: 0rem 0.25rem; 
+}
+
+#github:hover,#linkedin:hover,#twitter:hover,#instagram:hover{
+    scale: 1.1;
+    transition: 0.4s ease-out;
+    color: black;
+}
+
