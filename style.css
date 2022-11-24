@@ -22,18 +22,21 @@ text-align: center; */
 #card {
   display: block;
   text-align: center;
-  display: block;
   border: 1px solid #ff10f0;
   border-radius: 8px;
-  width: 30rem;
+  width: 20rem;
   padding: 1rem;
   margin: 5rem auto;
   background-color: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(2px);
   box-shadow: 0 0 0.2rem #fff, 0 0 0.2rem #fff, 0 0 2rem #ff10f0,
     0 0 0.8rem #ff10f0, 0 0 2.8rem #ff10f0;
+    animation: fadeIn 2s;
 }
-
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
 #name {
   font-family: "Bebas Neue", cursive;
   color: #fff;
@@ -100,5 +103,31 @@ text-align: center; */
     scale: 1.1;
     transition: 0.4s ease-out;
     color: black;
+    cursor: pointer;
+
 }
 
+.btn {
+    background-image: linear-gradient(to right, #f222ff 0%, #8c1eff  51%, #f222ff  100%);
+    margin: 5px;
+    padding: 10px 25px;
+    text-align: center; 
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: #fff;            
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    /* display: block; */
+    font-family:"Ubuntu", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+  }
+
+  .btn:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+
+}
